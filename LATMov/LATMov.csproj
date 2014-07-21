@@ -164,6 +164,11 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AwardModels.cs" />
+    <Compile Include="Models\FilmStudioModels.cs" />
+    <Compile Include="Models\LanguageModels.cs" />
+    <Compile Include="Models\SoundTrackModels.cs" />
+    <Compile Include="Utilities\Enumerations.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
