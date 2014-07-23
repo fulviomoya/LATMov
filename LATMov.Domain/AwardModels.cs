@@ -2,26 +2,24 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using LATMov.Utilities;
 
 namespace LATMov.Models {
+    public enum TypeAwards {
+        Nomination,
+        Winner
+    }
     public class AwardModels {
+        
+
         private string code;
         private DateTime date;
-        private Enumerations.TypeAwards typeNomination;
+        private TypeAwards typeNomination;
         private string description;
 
-        public string Code {
-            get {
-                return code;
-            }
-            set {
-                code = value;
-            }
-        }
+        public string Code { get; set;}
 
 
-        public Enumerations.TypeAwards TypeNomination {
+        public TypeAwards TypeNomination {
             get {
                 return typeNomination;
             }

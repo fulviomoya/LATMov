@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using LATMov.Utilities;
 using LATMov.Domain;
 
 namespace LATMov.Models {
@@ -28,7 +27,7 @@ namespace LATMov.Models {
 
     public class MovieModels {
         private string name;
-        private IPerson director;
+        private Person director;
         private double duration;
         private DateTime releaseDate;
         private List<GenreFile> genres;
