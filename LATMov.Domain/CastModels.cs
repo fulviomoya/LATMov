@@ -11,16 +11,10 @@ namespace LATMov.Models {
         /// <summary>
         /// Unique Identifier of a movies.
         /// </summary>
-        private int movieId {
-            get;
-            set;
-        }
+        public int movieId { get; set; }
         /// <summary>
         /// Identifier of people at cast.
         /// </summary>
-        private int peopleId {
-            get;
-            set;
-        }
+        public int peopleId { get; set; }
     }
 }

@@ -17,10 +17,10 @@ namespace LATMov.Domain {
         INSTAGRAM
     }
     public abstract class Person {
-        private string Name;
-        private DateTime Age;
-        private string Nationality;
-        private Roles Rol;
-        private SocialNetworks Network;
+        private string name;
+        private DateTime age;
+        private string nationality;
+        private Roles rol;
+        private SocialNetworks network;
     }
 }

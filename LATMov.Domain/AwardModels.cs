@@ -9,41 +9,13 @@ namespace LATMov.Models {
         Winner
     }
     public class AwardModels {
-        
+        private string code { get; set; }
 
-        private string code;
-        private DateTime date;
-        private TypeAwards typeNomination;
-        private string description;
+        private DateTime date { get; set; }
 
-        public string Code { get; set;}
+        private TypeAwards typeNomination { get; set; }
 
+        private string description { get; set; }
 
-        public TypeAwards TypeNomination {
-            get {
-                return typeNomination;
-            }
-            set {
-                typeNomination = value;
-            }
-        }
-
-        public string Description {
-            get {
-                return description;
-            }
-            set {
-                description = value;
-            }
-        }
-
-        public DateTime Date {
-            get {
-                return date;
-            }
-            set {
-                date = value;
-            }
-        }
     }
 }
