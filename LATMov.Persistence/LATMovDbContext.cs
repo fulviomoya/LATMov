@@ -9,9 +9,10 @@ using LATMov.Models;
 namespace LATMov.Persistence {
     public class LATMovDbContext: DbContext {
         public LATMovDbContext() : base("LATMovDataBase") { 
-            //Empty constructor
+            
         }
 
+        
         DbSet<AwardModels> AwardModels { get; set; }
     }
 }
