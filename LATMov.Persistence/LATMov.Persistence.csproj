@@ -47,6 +47,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LATMovDbContext.cs" />
+    <Compile Include="Migrations\201408010014116_NameDf.cs" />
+    <Compile Include="Migrations\201408010014116_NameDf.Designer.cs">
+      <DependentUpon>201408010014116_NameDf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408010019492_NameDf1.cs" />
+    <Compile Include="Migrations\201408010019492_NameDf1.Designer.cs">
+      <DependentUpon>201408010019492_NameDf1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408010020473_adf.cs" />
+    <Compile Include="Migrations\201408010020473_adf.Designer.cs">
+      <DependentUpon>201408010020473_adf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -58,6 +71,17 @@
       <Project>{5219247c-fee2-4b43-ac75-d82d567c5cf7}</Project>
       <Name>LATMov.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201408010014116_NameDf.resx">
+      <DependentUpon>201408010014116_NameDf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408010019492_NameDf1.resx">
+      <DependentUpon>201408010019492_NameDf1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408010020473_adf.resx">
+      <DependentUpon>201408010020473_adf.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

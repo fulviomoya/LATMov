@@ -7,7 +7,7 @@ namespace LATMov.Models {
     /// <summary>
     /// Model's class that define the 'Cast'
     /// </summary>
-    public class CastModels {
+    public class Cast {
         /// <summary>
         /// Unique Identifier of a movies.
         /// </summary>

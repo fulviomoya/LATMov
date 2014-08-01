@@ -8,11 +8,11 @@ using LATMov.Models;
 
 namespace LATMov.Persistence {
     public class LATMovDbContext: DbContext {
-        public LATMovDbContext() : base("LATMovDataBase") { 
+        public LATMovDbContext() { 
             
         }
 
-        
-        DbSet<AwardModels> AwardModels { get; set; }
+        public DbSet<Movie> movies { get; set; }
+        //DbSet<AwardModels> Award { get; set; }
     }
 }
