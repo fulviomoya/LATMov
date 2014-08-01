@@ -49,8 +49,13 @@
     <Compile Include="GenericRepository.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\LATMov.Domain\LATMov.Domain.csproj">
+      <Project>{5219247c-fee2-4b43-ac75-d82d567c5cf7}</Project>
+      <Name>LATMov.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LATMov.Persistence\LATMov.Persistence.csproj">
       <Project>{e98fcb40-7f03-42f3-a49a-6e62a789d8e2}</Project>
       <Name>LATMov.Persistence</Name>

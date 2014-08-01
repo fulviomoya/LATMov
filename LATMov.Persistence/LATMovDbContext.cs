@@ -7,11 +7,18 @@ using System.Data.Entity;
 using LATMov.Models;
 
 namespace LATMov.Persistence {
-    public class LATMovDbContext: DbContext {
-        public LATMovDbContext() { 
-            
+    public class LATMovDbContext: DbContext , IDisposable{
+        private static LATMovDbContext instance = null;
+        public static LATMovDbContext getInstance(){
+            return instance == null ? new LATMovDbContext() : instance;
         }
+        //Private constructor for implement singleton pattern
+        private LATMovDbContext() {        }
 
+        public void Dispose() {
+            this.Dispose();
+            GC.SuppressFinalize(this);
+        }
         #region DbSets Models
         public DbSet<Award> Awards { get; set; }
         public DbSet<Cast> Casts { get; set; }

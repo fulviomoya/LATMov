@@ -28,5 +28,7 @@ namespace LATMov.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<LATMov.Models.Language> Languages { get; set; }
     }
 }
