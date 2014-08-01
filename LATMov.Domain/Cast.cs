@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.ComponentModel.DataAnnotations;
 
 namespace LATMov.Models {
     /// <summary>
@@ -11,6 +12,7 @@ namespace LATMov.Models {
         /// <summary>
         /// Unique Identifier of a movies.
         /// </summary>
+        [Key]
         public int movieId { get; set; }
         /// <summary>
         /// Identifier of people at cast.

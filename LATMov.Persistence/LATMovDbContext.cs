@@ -11,6 +11,7 @@ namespace LATMov.Persistence {
         public LATMovDbContext() { 
             
         }
+
         #region DbSets Models
         public DbSet<Award> Awards { get; set; }
         public DbSet<Cast> Casts { get; set; }

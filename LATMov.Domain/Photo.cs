@@ -11,10 +11,10 @@ namespace LATMov.Models {
     }
     public class Photo {
         [Key]
-        public long id;
-        public string url_photo;
-        public string extension;
-        public PhotoType photoType;
+        public int id {get; set;}
+        public string url_photo { get; set; }
+        public string extension { get; set; }
+        public PhotoType photoType { get; set; }
        // size
     }
 }
