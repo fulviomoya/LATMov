@@ -17,7 +17,7 @@ namespace LATMov.Domain {
         TWITTER,
         INSTAGRAM
     }
-    public abstract class Person {
+    public  class Person {
         [Key]
         public int idPerson;
         public string name;

@@ -8,7 +8,7 @@ using LATMov.Models;
 
 namespace LATMov.Core {
     internal class UnitOfWork: IDisposable {
-        private LATMovDbContext dbContext = LATMovDbContext.getInstance();
+        private LATMovDbContext dbContext = new LATMovDbContext();
         private GenericRepository<Award> award = null;
         private GenericRepository<Cast> cast = null;
         private GenericRepository<FilmStudio> filmStudio = null;

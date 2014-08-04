@@ -51,6 +51,10 @@
     <Compile Include="Migrations\201408010110069_updatingModels.Designer.cs">
       <DependentUpon>201408010110069_updatingModels.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201408040348003_Im_Happy.cs" />
+    <Compile Include="Migrations\201408040348003_Im_Happy.Designer.cs">
+      <DependentUpon>201408040348003_Im_Happy.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -67,6 +71,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201408010110069_updatingModels.resx">
       <DependentUpon>201408010110069_updatingModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408040348003_Im_Happy.resx">
+      <DependentUpon>201408040348003_Im_Happy.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

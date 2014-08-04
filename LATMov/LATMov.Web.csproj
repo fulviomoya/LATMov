@@ -162,6 +162,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Movies1Controller.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -221,6 +222,11 @@
     <Content Include="Views\Account\ResetPassword.cshtml" />
     <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Movies1\Create.cshtml" />
+    <Content Include="Views\Movies1\Delete.cshtml" />
+    <Content Include="Views\Movies1\Details.cshtml" />
+    <Content Include="Views\Movies1\Edit.cshtml" />
+    <Content Include="Views\Movies1\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -236,6 +242,10 @@
     <ProjectReference Include="..\LATMov.Domain\LATMov.Domain.csproj">
       <Project>{5219247c-fee2-4b43-ac75-d82d567c5cf7}</Project>
       <Name>LATMov.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LATMov.Persistence\LATMov.Persistence.csproj">
+      <Project>{e98fcb40-7f03-42f3-a49a-6e62a789d8e2}</Project>
+      <Name>LATMov.Persistence</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
