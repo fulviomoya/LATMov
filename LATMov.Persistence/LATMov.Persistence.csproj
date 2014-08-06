@@ -47,14 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LATMovDbContext.cs" />
-    <Compile Include="Migrations\201408010110069_updatingModels.cs" />
-    <Compile Include="Migrations\201408010110069_updatingModels.Designer.cs">
-      <DependentUpon>201408010110069_updatingModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201408040348003_Im_Happy.cs" />
-    <Compile Include="Migrations\201408040348003_Im_Happy.Designer.cs">
-      <DependentUpon>201408040348003_Im_Happy.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -67,14 +59,6 @@
       <Project>{5219247c-fee2-4b43-ac75-d82d567c5cf7}</Project>
       <Name>LATMov.Domain</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201408010110069_updatingModels.resx">
-      <DependentUpon>201408010110069_updatingModels.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201408040348003_Im_Happy.resx">
-      <DependentUpon>201408040348003_Im_Happy.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

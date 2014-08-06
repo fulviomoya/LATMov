@@ -49,6 +49,7 @@
     <Compile Include="Award.cs" />
     <Compile Include="Cast.cs" />
     <Compile Include="FilmStudio.cs" />
+    <Compile Include="IModels.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Language.cs" />
     <Compile Include="Movie.cs" />

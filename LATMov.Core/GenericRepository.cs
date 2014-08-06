@@ -72,5 +72,10 @@ namespace LATMov.Core {
             dbSet.Attach(entityToUpdate);
             dbContext.Entry(entityToUpdate).State = EntityState.Modified;
         }
+
+
+        public void Delete(int Id) {
+            //
+        }
     }
 }

@@ -8,13 +8,17 @@ using System.Data.Entity;
 using LATMov.Models;
 
 namespace LATMov.Core {
-    internal class UnitOfWork: IDisposable, IUnitOfWork {
+    public class UnitOfWork: IDisposable {
         private readonly DbContext context;
-        private readonly IRepositoryFactory factory;
+        //private readonly IRepositoryFactory factory;
 
-        public UnitOfWork(DbContext context, IRepositoryFactory factory){
+        //public UnitOfWork(DbContext context, IRepositoryFactory factory){
+        //    this.context = context;
+        //   // this.factory = factory;
+        //}
+        public UnitOfWork(DbContext context) {
             this.context = context;
-            this.factory = factory;
+            // this.factory = factory;
         }
 
         /// <summary>
@@ -22,9 +26,9 @@ namespace LATMov.Core {
         /// </summary>
         /// <typeparam name="T"> Type of entity to build</typeparam>
         /// <returns> A new object type of param T</returns>
-        IRepository<T> BuildRepository<T>() where T: class{
-            return factory.BuildRepository<T>();
-        }
+        //IRepository<T> BuildRepository<T>() where T: class{
+        //    return factory.BuildRepository<T>();
+        //}
         
         /// <summary>
         /// Method for save all change of each repository managed right through the Unit of work

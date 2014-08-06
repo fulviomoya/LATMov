@@ -12,7 +12,7 @@ namespace LATMov.Core {
                         string includeProperties);
          T Find(int id);
          void Insert(T t);
-         void Delete(object Id);
+         void Delete(int Id);
          void Delete(T entityToDelete);
          void Update(T entityToUpdate);
     }

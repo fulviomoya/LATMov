@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using LATMov.Domain;
-using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations; 
+
 
 namespace LATMov.Models {
     public enum Clasifications {
@@ -26,7 +27,7 @@ namespace LATMov.Models {
         Biography
     }
 
-    public class Movie {
+    public class Movie :IModels {
         [Key]
         public int MovieModelsId { get; set; }
         public string name { get; set;}
@@ -42,5 +43,6 @@ namespace LATMov.Models {
         public List<Award> awards { get; set; }
         public List<SoundTrack> soundTracks { get; set; }
         public List<Photo> photos { get; set; }
+        public int id {get; set;}
     }
 }
