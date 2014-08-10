@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace WebApplication1 {
+namespace LATMov.Web {
     public class BundleConfig {
         // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles) {
@@ -22,17 +22,8 @@ namespace WebApplication1 {
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-<<<<<<< HEAD:LATMov/App_Start/BundleConfig.cs
-<<<<<<< HEAD
-                      "~/Content/site.css"));
-=======
-                      "~/Content/site.css", 
-=======
-                      "~/Content/site.css",
->>>>>>> develop:LATMov.Web/App_Start/BundleConfig.cs
                       "~/Content/screen.css", 
                       "~/Content/formalize.css"));
->>>>>>> develop
 
 
             // Set EnableOptimizations to false for debugging. For more information,
