@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using LATMov.Domain;
 using System.ComponentModel.DataAnnotations;
 
-namespace LATMov.Models {
+
+namespace LATMov.Domain {
     public enum Clasifications {
         G,
         PG,
@@ -26,21 +26,22 @@ namespace LATMov.Models {
         Biography
     }
 
-    public class Movie {
+    public class Movie :IModels {
         [Key]
-        public int MovieModelsId { get; set; }
+        public int id { get; set; }
         public string name { get; set;}
-        public Person director { get; set; }
+        public virtual Director director { get; set; }
         public double duration { get; set; }
-        public DateTime releaseDate { get; set; }
-        public List<Genre> genres { get; set; }
-        public Clasifications clasification { get; set; }
-        public List<Language> languages { get; set; }
-        public List<Trailler> traillers { get; set; }
-        public List<SocialNetworkAccount> socialNetworkAccounts { get; set; }
-        public List<FilmStudio> filmStudios { get; set; }
-        public List<Award> awards { get; set; }
-        public List<SoundTrack> soundTracks { get; set; }
-        public List<Photo> photos { get; set; }
+        public virtual DateTime releaseDate { get; set; }
+        public virtual List<Genre> genres { get; set; }
+        public virtual Clasifications clasification { get; set; }
+        public virtual List<Language> languages { get; set; }
+        public virtual List<Trailler> traillers { get; set; }
+        public virtual List<SocialNetworkAccount> socialNetworkAccounts { get; set; }
+        public virtual List<FilmStudio> filmStudios { get; set; }
+        public virtual List<Award> awards { get; set; }
+        public virtual List<SoundTrack> soundTracks { get; set; }
+        public virtual List<Photo> photos { get; set; }
+        
     }
 }

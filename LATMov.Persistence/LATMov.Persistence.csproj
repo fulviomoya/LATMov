@@ -47,13 +47,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LATMovDbContext.cs" />
-    <Compile Include="Migrations\201408010110069_updatingModels.cs" />
-    <Compile Include="Migrations\201408010110069_updatingModels.Designer.cs">
-      <DependentUpon>201408010110069_updatingModels.cs</DependentUpon>
+    <Compile Include="Migrations\201408101703250_WithData20.cs" />
+    <Compile Include="Migrations\201408101703250_WithData20.Designer.cs">
+      <DependentUpon>201408101703250_WithData20.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201408040348003_Im_Happy.cs" />
-    <Compile Include="Migrations\201408040348003_Im_Happy.Designer.cs">
-      <DependentUpon>201408040348003_Im_Happy.cs</DependentUpon>
+    <Compile Include="Migrations\201408101715423_WithData2.cs" />
+    <Compile Include="Migrations\201408101715423_WithData2.Designer.cs">
+      <DependentUpon>201408101715423_WithData2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408101820131_WithData.cs" />
+    <Compile Include="Migrations\201408101820131_WithData.Designer.cs">
+      <DependentUpon>201408101820131_WithData.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -69,11 +73,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201408010110069_updatingModels.resx">
-      <DependentUpon>201408010110069_updatingModels.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201408101703250_WithData20.resx">
+      <DependentUpon>201408101703250_WithData20.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201408040348003_Im_Happy.resx">
-      <DependentUpon>201408040348003_Im_Happy.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201408101715423_WithData2.resx">
+      <DependentUpon>201408101715423_WithData2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408101820131_WithData.resx">
+      <DependentUpon>201408101820131_WithData.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

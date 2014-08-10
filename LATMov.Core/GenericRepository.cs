@@ -17,9 +17,6 @@ namespace LATMov.Core {
             this.dbSet = dbContext.Set<T>();
         }
 
-        public virtual T GetById(int i) {
-            return null;
-        }
         /// <summary>
         /// Method for get all items from persistence unit.
         /// </summary>
@@ -71,6 +68,11 @@ namespace LATMov.Core {
         public virtual void Update(T entityToUpdate) {
             dbSet.Attach(entityToUpdate);
             dbContext.Entry(entityToUpdate).State = EntityState.Modified;
+        }
+
+
+        public void Delete(int Id) {
+            //
         }
     }
 }

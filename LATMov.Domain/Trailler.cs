@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.ComponentModel.DataAnnotations;
 
-namespace LATMov.Models {
+namespace LATMov.Domain {
     public class Trailler {
         [Key]
         public int id { get; set; }

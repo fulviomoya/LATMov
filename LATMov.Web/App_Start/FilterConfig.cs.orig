@@ -1,0 +1,19 @@
+﻿using System.Web;
+using System.Web.Mvc;
+
+<<<<<<< HEAD:LATMov/App_Start/FilterConfig.cs
+namespace LATMov
+{
+    public class FilterConfig
+    {
+        public static void RegisterGlobalFilters(GlobalFilterCollection filters)
+        {
+=======
+namespace WebApplication1 {
+    public class FilterConfig {
+        public static void RegisterGlobalFilters(GlobalFilterCollection filters) {
+>>>>>>> develop:LATMov.Web/App_Start/FilterConfig.cs
+            filters.Add(new HandleErrorAttribute());
+        }
+    }
+}
