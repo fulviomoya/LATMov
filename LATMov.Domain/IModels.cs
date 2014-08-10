@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LATMov.Models {
+namespace LATMov.Domain {
    public interface IModels {
          int id { get; set; }
     }

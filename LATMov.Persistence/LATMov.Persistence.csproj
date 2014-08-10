@@ -47,6 +47,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LATMovDbContext.cs" />
+    <Compile Include="Migrations\201408101703250_WithData20.cs" />
+    <Compile Include="Migrations\201408101703250_WithData20.Designer.cs">
+      <DependentUpon>201408101703250_WithData20.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408101715423_WithData2.cs" />
+    <Compile Include="Migrations\201408101715423_WithData2.Designer.cs">
+      <DependentUpon>201408101715423_WithData2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408101820131_WithData.cs" />
+    <Compile Include="Migrations\201408101820131_WithData.Designer.cs">
+      <DependentUpon>201408101820131_WithData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -59,6 +71,17 @@
       <Project>{5219247c-fee2-4b43-ac75-d82d567c5cf7}</Project>
       <Name>LATMov.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201408101703250_WithData20.resx">
+      <DependentUpon>201408101703250_WithData20.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408101715423_WithData2.resx">
+      <DependentUpon>201408101715423_WithData2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408101820131_WithData.resx">
+      <DependentUpon>201408101820131_WithData.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

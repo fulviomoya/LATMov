@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
 
-namespace LATMov.Models {
+namespace LATMov.Domain {
     public class SoundTrack {
         [Key]
         public int idSound {get; set;}

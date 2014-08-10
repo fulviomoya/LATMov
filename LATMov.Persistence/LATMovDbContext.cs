@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
-using LATMov.Models;
+using LATMov.Domain;
 
 namespace LATMov.Persistence {
     public class LATMovDbContext: DbContext {
@@ -20,6 +20,7 @@ namespace LATMov.Persistence {
         public DbSet<SocialNetworkAccount> SocialNetworkAccounts { get; set; }
         public DbSet<SoundTrack> SoundTracks { get; set; }
         public DbSet<Trailler> Traillers { get; set; }
+        public DbSet<Director> Director { get; set; }
         #endregion
     }
 }

@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LATMov.Persistence", "LATMo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LATMov.Core", "LATMov.Core\LATMov.Core.csproj", "{F32803E5-3E84-4322-8BED-C65B9B5E638D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LATMov.Web", "WebApplication1\LATMov.Web.csproj", "{410DBB17-E170-4C52-9B15-151F18A2B5E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LATMov.Web", "LATMov.Web\LATMov.Web.csproj", "{410DBB17-E170-4C52-9B15-151F18A2B5E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
